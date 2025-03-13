@@ -1,0 +1,24 @@
+
+HOA: v1
+name: "F(r35 & XF(r27 & XFr28))"
+States: 4
+Start: 2
+AP: 3 "r35" "r27" "r28"
+acc-name: Buchi
+Acceptance: 1 Inf(0)
+properties: trans-labels explicit-labels state-acc complete
+properties: deterministic terminal very-weak
+Label: 14
+--BODY--
+State: 0 0
+[t] 0
+State: 1
+[2] 0
+[!2] 1
+State: 2
+[!0] 2
+[0] 3
+State: 3
+[1] 1
+[!1] 3
+--END--
