@@ -1,0 +1,20 @@
+HOA: v1
+name: "F(r3 & XFr2)"
+States: 3
+Start: 1
+AP: 2 "r3" "r2"
+acc-name: Buchi
+Acceptance: 1 Inf(0)
+properties: trans-labels explicit-labels state-acc complete
+properties: deterministic terminal very-weak
+Label: 2
+--BODY--
+State: 0 {0}
+[t] 0
+State: 1
+[!0] 1
+[0] 2
+State: 2
+[1] 0
+[!1] 2
+--END--
